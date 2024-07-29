@@ -1,29 +1,38 @@
+import {useState} from "react";
+
 const VerificationScreen = () => {
+  const [inputText, setInputText] = useState('');
   return (
-    <div className="max-w-lg mx-auto mt-12 p-6 border border-gray-300 rounded-lg shadow-md text-center">
-      <div className="mb-10">
+    <div className="max-w-lg mx-auto mt-6 md:mt-12 p-4 md:p-6 border border-gray-300 rounded-lg shadow-md text-center">
+      <div className="mb-8 md:mb-10">
         <img
           src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
           alt="Email Icon"
-          className="w-24 h-24 mx-auto"
+          className="w-20 h-20 md:w-24 md:h-24 mx-auto"
         />
       </div>
-      <h2 className="text-4xl font-semibold text-orange-500 mb-4">
+      <h2 className="text-2xl md:text-4xl font-semibold text-orange-500 mb-3 md:mb-4">
         Verify e-mail address
       </h2>
-      <p className="text-black-500 mb-2 font-bold">
+      <p className="text-sm md:text-base text-black-500 mb-2 font-bold">
         Please, confirm that you want to use this email for verification in
         your account.
       </p>
-      <p className="text-black-500 mb-2 font-bold">
+      <p className="text-sm md:text-base text-black-500 mb-4 font-bold">
         Click on the email below or paste a code. Please verify by pasting the
         code below.
       </p>
-      <div className="inline-block px-6 py-2 border border-gray-300 bg-gray-100 rounded">
-        <span className="text-xl font-bold text-orange-600">8816</span>
+      <div className="inline-block px-4 py-2 border border-gray-300 bg-gray-100 rounded">
+      <input
+          type="text"
+          placeholder="Verification Code"
+          value={inputText}
+          onChange={(e) => setInputText(e.target.value)}
+          className="text-lg md:text-xl font-bold text-orange-600 bg-transparent border-none focus:outline-none"
+        />
       </div>
       <div>
-        <button className="mt-6 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">
+        <button className="mt-4 md:mt-6 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded transition duration-300 ease-in-out transform hover:scale-105">
           Verify
         </button>
       </div>
