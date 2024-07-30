@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main: #2a3447;
+    --soft: #384256;
+    --dark: #222b3c;
+    --textMain: white;
+    --textSoft: #ddd;
+    --textDark:#2a3447
+    ;}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.main{
+    font-family:"Inter", sans-serif;
+    background-color: var(--main);
+    color: var(--textMain);
+}
+.container{
+    display: flex;
+}
+
+.menuContainer{
+    width: 250px;
+    padding: 5px 20px;
+    border-right: 2px solid var(--soft)
+}
