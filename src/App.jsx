@@ -39,9 +39,9 @@ const Layout = () =>{
       {
         path: "/",
         element: 
-          <Layout/>
-        ,
-      },
+          <Layout/>,
+          children:[
+      
       {
         path: "/",
         element: <Home/>,
@@ -54,6 +54,8 @@ const Layout = () =>{
         path: "products",
         element: <Products/>,
       },
+    ],
+  },
       {
         // notice that when you navigate to the login screen the menu and others do not appear there. This is because it is not part of the layout.
         path: "login",
