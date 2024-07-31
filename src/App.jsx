@@ -20,13 +20,14 @@ const Layout = () =>{
   return (
     <div className="main">
       <Navbar/>
-      <div className="container">
+      <div className="container w-full h-full">
         <div className="menuContainer">
           <Menu/>
         </div>
         <div className="contentContainer">
           <Outlet />
         </div>
+        
       </div>
       <Footer/>
     </div>
