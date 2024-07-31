@@ -6,7 +6,7 @@ const Menu = () => {
     <div className="menu">
       {menu.map((item) => (
         <div className="item flex-col gap-[10px] mb-[20px] " key={item.id}>
-          <span className="title text-[12px] font-semibold text-textSoft">
+          <span className="title text-[12px] font-semibold text-textSoft uppercase">
             {item.title}
           </span>
           {item.listItems.map((listItems) => (
