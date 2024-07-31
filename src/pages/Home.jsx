@@ -1,9 +1,12 @@
 import React from 'react'
+import TopBox from '../components/TopBox'
 
 const Home = () => {
   return (
 <div className="home grid gap-[20px] grid-cols-[1fr,1fr,1fr,1fr] auto-rows-[minmax(180px,auto)] w-full">
-  <div className="box box1 p-[20px] rounded-[10px] border-soft border-[1px] row-span-3 ">Box1</div>
+  <div className="box box1 p-[20px] rounded-[10px] border-soft border-[1px] row-span-3 ">
+  <TopBox/>
+  </div>
   <div className="box box2 p-[20px] rounded-[10px] border-soft border-[1px]  ">Box2</div>
   <div className="box box3 p-[20px] rounded-[10px] border-soft border-[1px]  ">Box3</div>
   <div className="box box4 p-[20px] rounded-[10px] border-soft border-[1px] row-span-3 ">Box4</div>

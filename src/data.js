@@ -13,7 +13,7 @@
  import logIcon from "./assets/log.svg"
  import chartIcon from "./assets/chart.svg"
 
-
+// Future upgrades: Use APIs for this or you will have to fetch the data from the database
 
  
  export const menu = [
@@ -135,4 +135,56 @@
     },
     
     
+ ];
+
+ export const topDeals=[
+    {
+        id:1,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLKFC0wo4itixSIlD-UagzzT7z62ZvOS2-A&s" ,
+        email: "leyla@gmail.com",
+        userName:"Carmen",
+        amount:"3.499"
+    },
+    {
+        id:2,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqW_F3f2e6etl0m648H-ZbPMHuL1LwBfyfBA&s" ,
+        email: "leyla@gmail.com",
+        userName:"April",
+        amount:"3.499"
+    },
+    {
+        id:3,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTzRLzyQt0JInVAhe3ILZf97mgHSqjnMpGA&s",
+        email: "john@gmail.com",
+        userName:"Angela",
+        amount:"4.299"
+    },
+    {
+        id:4,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8f8qJcHCxhD9LpsWRhzsIvIpr2O7HG-jKtA&s",
+        email: "sarah@gmail.com",
+        userName:"Jayden",
+        amount:"2.199"
+    },
+    {
+        id:5,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ImXCKz5Cxq_lj05wOJ9Uo1g7WyJHBSqYCQ&s",
+        email: "michael@gmail.com",
+        userName:"Brooks",
+        amount:"5.699"
+    },
+    {
+        id:6,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mcqf-1g06VfMleAeIrzIEsWTmKn7QoSwJQ&s",
+        email: "michael@gmail.com",
+        userName:"Augustine",
+        amount:"5.699"
+    },
+    {
+        id:7,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J83eYYuFuwAJsoPcczoEm6H5U3xImEwmIg&s",
+        email: "michael@gmail.com",
+        userName:"Parker",
+        amount:"5.699"
+    },
  ];
