@@ -1,7 +1,20 @@
-import {useState} from "react";
+import { useState } from "react";
 
 const VerificationScreen = () => {
   const [inputText, setInputText] = useState('');
+  const [verificationStatus, setVerificationStatus] = useState(null); // null, 'success', or 'error'
+
+  const handleVerify = () => {
+    // Replace this with your actual verification logic
+    const isValidCode = inputText === "123456"; // Example verification code
+
+    if (isValidCode) {
+      setVerificationStatus('success');
+    } else {
+      setVerificationStatus('error');
+    }
+  };
+
   return (
     <div className="max-w-lg mx-auto mt-6 md:mt-12 p-4 md:p-6 border border-gray-300 rounded-lg shadow-md text-center">
       <div className="mb-8 md:mb-10">
@@ -23,19 +36,28 @@ const VerificationScreen = () => {
         code below.
       </p>
       <div className="inline-block px-4 py-2 border border-gray-300 bg-gray-100 rounded">
-      <input
+        <input
           type="text"
           placeholder="Verification Code"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
-          className="text-lg md:text-xl font-bold text-orange-600 bg-transparent border-none focus:outline-none"
+          className="text-lg md:text-xl font-bold text-orange-600 bg-transparent border-none focus:outline-none placeholder-center"
         />
       </div>
       <div>
-        <button className="mt-4 md:mt-6 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded transition duration-300 ease-in-out transform hover:scale-105">
+        <button
+          onClick={handleVerify}
+          className="mt-6 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"
+        >
           Verify
         </button>
       </div>
+      {verificationStatus === 'success' && (
+        <p className="text-green-500 mt-4">Verification successful!</p>
+      )}
+      {verificationStatus === 'error' && (
+        <p className="text-red-500 mt-4">Verification failed. Please try again.</p>
+      )}
     </div>
   );
 };
