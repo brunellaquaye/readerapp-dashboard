@@ -12,6 +12,10 @@
  import backupIcon from "./assets/backup.svg"
  import logIcon from "./assets/log.svg"
  import chartIcon from "./assets/chart.svg"
+ import conversionIcon from "./assets/conversionIcon.svg"
+ import user from "./assets/userIcon.svg"
+ import product from "./assets/productIcon.svg"
+ import revenue from "./assets/revenueIcon.svg"
 
 // Future upgrades: Use APIs for this or you will have to fetch the data from the database
 
@@ -187,4 +191,90 @@
         userName:"Parker",
         amount:"5.699"
     },
+    {
+        id:8,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J83eYYuFuwAJsoPcczoEm6H5U3xImEwmIg&s",
+        email: "michael@gmail.com",
+        userName:"Parker",
+        amount:"5.699"
+    },
+    {
+        id:9,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J83eYYuFuwAJsoPcczoEm6H5U3xImEwmIg&s",
+        email: "michael@gmail.com",
+        userName:"Parker",
+        amount:"5.699"
+    },
  ];
+
+ export const chartBoxUser={
+    color:"#8884d8",
+    icon:user,
+    title:"Total Users",
+    number:"11.238",
+    dataKey:"users",
+    percentage:45,
+    chartData:[
+        {name:"Mon", users:400},
+        {name:"Tue", users:500},
+        {name:"Wed", users:460},
+        {name:"Thurs", users:977},
+        {name:"Fri", users:576},
+        {name:"Sat", users:235},
+        {name:"Sun", users:856},
+    ]
+ };
+
+ export const chartBoxRevenue = {
+    color: "#82ca9d",
+    icon: revenue, 
+    title: "Revenue",
+    dataKey: "revenue",
+    number: "$12,345",
+    percentage: 78,
+    chartData: [
+      { name: "Mon", revenue: 800 },
+      { name: "Tue", revenue: 967 },
+      { name: "Wed", revenue: 1098 },
+      { name: "Thu", revenue: 1200 },
+      { name: "Fri", revenue: 1228 },
+      { name: "Sat", revenue: 1100 },
+      { name: "Sun", revenue: 1500 },
+    ],
+  };
+
+  export const chartBoxProducts = {
+    color: "orange",
+    icon: product, 
+    title: "Products",
+    dataKey: "revenue",
+    number: "$12,345",
+    percentage: -23,
+    chartData: [
+      { name: "Mon", revenue: 800 },
+      { name: "Tue", revenue: 967 },
+      { name: "Wed", revenue: 198 },
+      { name: "Thu", revenue: 1660 },
+      { name: "Fri", revenue: 1228 },
+      { name: "Sat", revenue: 11 },
+      { name: "Sun", revenue: 1500 },
+    ],
+  };
+
+  export const chartBoxConversion = {
+    color: "lightblue",
+    icon: conversionIcon, 
+    title: "Conversion",
+    dataKey: "revenue",
+    number: "$12,345",
+    percentage: 3,
+    chartData: [
+      { name: "Mon", revenue: 80 },
+      { name: "Tue", revenue: 67 },
+      { name: "Wed", revenue: 1048 },
+      { name: "Thu", revenue: 1200 },
+      { name: "Fri", revenue: 14628 },
+      { name: "Sat", revenue: 1100 },
+      { name: "Sun", revenue: 1530 },
+    ],
+  };
