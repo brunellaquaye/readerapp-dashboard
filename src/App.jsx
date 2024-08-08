@@ -1,35 +1,71 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import * as React from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+ Outlet
+} from "react-router-dom";
+import './index.css';
+import Home from "./pages/Home";
+import Users from "./pages/Users";
+import Products from "./pages/Products";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import Login from "./pages/Login";
 
 function App() {
-  const [count, setCount] = useState(0)
 
+const Layout = () =>{
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="main">
+      <Navbar/>
+      <div className="container w-full h-full">
+        <div className="menuContainer">
+          <Menu/>
+        </div>
+        <div className="contentContainer">
+          <Outlet />
+        </div>
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <Footer/>
+    </div>
   )
+}
+
+
+
+    const router = createBrowserRouter([
+      {
+        path: "/",
+        element: 
+          <Layout/>,
+          children:[
+      
+      {
+        path: "/",
+        element: <Home/>,
+      },
+      {
+        path: "users",
+        element: <Users/>,
+      },
+      {
+        path: "products",
+        element: <Products/>,
+      },
+    ],
+  },
+      {
+        // notice that when you navigate to the login screen the menu and others do not appear there. This is because it is not part of the layout.
+        path: "login",
+        element: <Login/>,
+      },
+    ]);
+    
+   return <RouterProvider router={router} />;
+  
 }
 
 export default App
