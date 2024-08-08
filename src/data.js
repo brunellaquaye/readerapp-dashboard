@@ -278,3 +278,77 @@
       { name: "Sun", revenue: 1530 },
     ],
   };
+
+
+  export const barChartBoxVisit={
+    title:"Total Visit",
+    color: "#FF8042",
+    dataKey:"visit",
+    chartData:[
+        {
+            name:"Sun",
+            visit:2009,
+        }, 
+        {
+            name:"Mon",
+            visit:2009,
+        },      
+        {
+            name:"Tue",
+            visit:209,
+        },  
+        {
+            name:"Wed",
+            visit:2679,
+        },  
+        {
+            name:"Thur",
+            visit:3309,
+        },  
+        {
+            name:"Fri",
+            visit:7409,
+        },  
+        {
+            name:"Sat",
+            visit:709,
+        },  
+    ]
+};
+
+
+export const barChartBoxRevenue={
+    title:"Total Revenue",
+    color: "#FF8042",
+    dataKey:"visit",
+    chartData:[
+        {
+            name:"Sun",
+            visit:689,
+        }, 
+        {
+            name:"Mon",
+            visit:2009,
+        },      
+        {
+            name:"Tue",
+            visit:29,
+        },  
+        {
+            name:"Wed",
+            visit:2879,
+        },  
+        {
+            name:"Thur",
+            visit:339,
+        },  
+        {
+            name:"Fri",
+            visit:709,
+        },  
+        {
+            name:"Sat",
+            visit:709,
+        },  
+    ]
+}
