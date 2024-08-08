@@ -1,13 +1,15 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import VerificationScreen from './pages/VerificationScreen'; 
+import VerificationScreen1 from './pages/VerificationScreen1'; 
+import VerifyCodeScreen from './pages/VerifyCodeScreen';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route index element = {<VerificationScreen/>} />
-          <Route path="verification" element={<VerificationScreen />} />
+        <Route index element = {<VerifyCodeScreen/>} />
+          <Route path="verification" element={<VerificationScreen1 />} />
+          <Route path="verify code" element={<VerifyCodeScreen />} />
       </Routes>
     </Router>
   );

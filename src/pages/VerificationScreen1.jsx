@@ -1,6 +1,4 @@
-
-
-const VerificationScreen = () => {
+const VerificationScreen1 = () => {
   return (
     <div className="max-w-lg mx-auto mt-6 md:mt-12 p-4 md:p-6 border border-orange-300 rounded-lg shadow-md text-center">
       <div className="mb-8 md:mb-10">
@@ -34,6 +32,8 @@ const VerificationScreen = () => {
   );
 };
 
-export default VerificationScreen;
+export default VerificationScreen1;
   
+
+
 
