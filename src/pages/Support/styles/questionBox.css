@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.question-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 442px;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 1rem; 
+}
+
+.question-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.question-box-wrapper p {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    width: 300px;
+    margin: 0;
+}
+
+.question-box-wrapper img {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+}
+
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon.open {
+    transform: rotate(45deg);
+}
+
+.answer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px; 
+    width: 100%; 
+    transition: max-height 0.3s ease;
+    overflow: hidden; 
+    max-height: 0; 
+    background-color: #ED7117;
+}
+
+.answer-container.open {
+    min-height: 100px; 
+}
+
+.answer {
+    margin: 0;
+    color: white;
+}
