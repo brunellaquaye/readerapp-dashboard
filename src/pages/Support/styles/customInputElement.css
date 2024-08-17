@@ -1,0 +1,59 @@
+
+.custom-input-wrapper{
+    margin-bottom: 15%;
+    max-width: 600px;
+}
+
+.custom-input-wrapper input{
+    max-width: 546px;
+    min-width: 250px;
+    min-height: 96px;
+    border: 0.5px solid #989898;
+    border-radius: 20px;
+    outline: none;
+    padding:25px
+}
+
+.custom-input-wrapper input::placeholder{
+    font-size: 16px;
+    color: #989898;
+}
+@media (min-width:950px) and (max-width:1920px){
+    .custom-input-wrapper input{
+        width: 546px;
+    }
+}
+
+@media (min-width:825px) and (max-width:949px){
+    .custom-input-wrapper input{
+        width: 450px;
+    }
+}
+
+@media (min-width:770px) and (max-width:824px){
+    .custom-input-wrapper input{
+       width: 400px;
+    }
+}
+
+@media (min-width:701px) and (max-width:769px){
+    .custom-input-wrapper input{
+       width: 350px;
+    }
+}
+
+@media(min-width:600px) and (max-width:700px){
+    .custom-input-wrapper{
+        width: 300px;
+    }
+    .custom-input-wrapper input{
+        width: 300px;
+    }
+}
+
+@media (max-width:500px){
+    .custom-input-wrapper input{
+        width: 250px;
+    }
+}
+

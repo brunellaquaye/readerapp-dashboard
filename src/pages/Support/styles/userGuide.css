@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kotta+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+
+.user-guide-wrapper{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.user-guide-intro{
+    font-weight: 700 ;
+    font-size: 16px ;
+    color:#625656
+}
+.bottom-section-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.technical-specifications-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 352px;
+    min-height: 70px;
+    
+}
+.technical-specifications-container p{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    max-width: 272px;
+    min-height: 15px;
+}
+.technical-specifications-container img{
+    width: 50px;
+    height: 50px;
+}
+@media(max-width:920px){
+    .bottom-section-wrapper{
+        margin-top:5%;
+        margin-left: -35%;
+    }
+
+}
+@media (min-width:701px) and (max-width:750px){
+    .bottom-section-wrapper{
+        margin-left: -45%;
+    }
+}
+@media(max-width:590px){
+    .bottom-section-wrapper{
+        margin-top:5%;
+        margin-left: -50%;
+    }
+}
+.bottom-section-wrapper ol{
+    list-style-type: decimal;
+}

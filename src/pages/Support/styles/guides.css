@@ -1,0 +1,27 @@
+
+
+.guides-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 521px;
+    min-height: 189px;
+    margin-bottom: 2%;
+}
+.guides-wrapper em{
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 1%;
+}
+.guides-wrapper p{
+    font-family: "Inter",sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 30px;
+    color:#625656
+}
+@media(max-width:590px){
+.guides-wrapper{
+    max-width: 300px;
+}
+}
