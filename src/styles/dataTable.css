@@ -1,0 +1,10 @@
+/* Add your prefared styles and color to the grid table here. Look for the class name from the inspection of the table. */
+
+.MuiDataGrid-toolbarContainer{
+    display: flex;
+flex-direction: row-reverse;
+}
+
+.MuiDataGrid-toolbarContainer .MuiButton-root{
+    color: orange;
+}

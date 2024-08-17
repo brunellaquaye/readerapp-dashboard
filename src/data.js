@@ -278,3 +278,181 @@
       { name: "Sun", revenue: 1530 },
     ],
   };
+
+
+  export const barChartBoxVisit={
+    title:"Total Visit",
+    color: "#FF8042",
+    dataKey:"visit",
+    chartData:[
+        {
+            name:"Sun",
+            visit:2009,
+        }, 
+        {
+            name:"Mon",
+            visit:2009,
+        },      
+        {
+            name:"Tue",
+            visit:209,
+        },  
+        {
+            name:"Wed",
+            visit:2679,
+        },  
+        {
+            name:"Thur",
+            visit:3309,
+        },  
+        {
+            name:"Fri",
+            visit:7409,
+        },  
+        {
+            name:"Sat",
+            visit:709,
+        },  
+    ]
+};
+
+
+export const barChartBoxRevenue={
+    title:"Total Revenue",
+    color: "#FF8042",
+    dataKey:"visit",
+    chartData:[
+        {
+            name:"Sun",
+            visit:689,
+        }, 
+        {
+            name:"Mon",
+            visit:2009,
+        },      
+        {
+            name:"Tue",
+            visit:29,
+        },  
+        {
+            name:"Wed",
+            visit:2879,
+        },  
+        {
+            name:"Thur",
+            visit:339,
+        },  
+        {
+            name:"Fri",
+            visit:709,
+        },  
+        {
+            name:"Sat",
+            visit:709,
+        },  
+    ]
+}
+
+
+export const myrows=[
+    {
+        id:1,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLKFC0wo4itixSIlD-UagzzT7z62ZvOS2-A&s" ,
+        lastName:"Cruella",
+        firstName:"Mondo",
+        email:"cruella@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: true,
+    },
+    {
+        id:2,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqW_F3f2e6etl0m648H-ZbPMHuL1LwBfyfBA&s" ,
+        lastName:"Carmen",
+        firstName:"Brooks",
+        email:"carmen@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: false,
+    },
+    {
+        id:3,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTzRLzyQt0JInVAhe3ILZf97mgHSqjnMpGA&s",
+        lastName:"April",
+        firstName:"Sins",
+        email:"april@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: true,
+    },
+    {
+        id:4,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8f8qJcHCxhD9LpsWRhzsIvIpr2O7HG-jKtA&s",
+        lastName:"Angela",
+        firstName:"Vitz",
+        email:"angela@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: true,
+    },
+    {
+        id:5,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ImXCKz5Cxq_lj05wOJ9Uo1g7WyJHBSqYCQ&s",
+        lastName:"Stephen",
+        firstName:"Parker",
+        email:"stephen@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: true,
+    },
+    {
+        id:6,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mcqf-1g06VfMleAeIrzIEsWTmKn7QoSwJQ&s",
+        lastName:"Onil",
+        firstName:"Mannar",
+        email:"onil@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: true,
+    },
+    {
+        id:7,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLKFC0wo4itixSIlD-UagzzT7z62ZvOS2-A&s" ,
+        lastName:"Genner",
+        firstName:"Pinsin",
+        email:"genner@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: true,
+    },
+    {
+        id:8,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHLKFC0wo4itixSIlD-UagzzT7z62ZvOS2-A&s" ,
+        lastName:"Mellisa",
+        firstName:"Gladys",
+        email:"mellisa@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: false,
+    },
+    {
+        id:9,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J83eYYuFuwAJsoPcczoEm6H5U3xImEwmIg&s",
+        lastName:"Nuella",
+        firstName:"Mundane",
+        email:"nuella@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: true,
+    },
+    {
+        id:10,
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J83eYYuFuwAJsoPcczoEm6H5U3xImEwmIg&s",
+        lastName:"Felicia",
+        firstName:"Pores",
+        email:"felicia@gmail.com",
+        phone:"+223 345 323 3423",
+        createdAt:"09.03.2024",
+        verified: false,
+    }
+]
