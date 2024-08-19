@@ -13,7 +13,7 @@ const data =[
 const PieChartBox = () => {
   return (
 <div className="pieChartBox h-[100%] flex flex-col justify-between">
-<h1>Leads by Source</h1>
+<h1>Devices</h1>
 <div className="chart flex items-center justify-center w-[100%] h-[100%]">
     <ResponsiveContainer width="99%" height={300}>
     <PieChart 
