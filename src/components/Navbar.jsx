@@ -1,4 +1,3 @@
-import React from "react";
 import searchIcon from "../assets/search-2.svg";
 import app from "../assets/app-2.svg";
 import notifications from "../assets/notifications.svg"
