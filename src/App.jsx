@@ -1,6 +1,3 @@
-
-import * as React from "react";
-import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,6 +11,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Login from "./pages/Login";
+import { Preferences } from "./pages/Settings/Preferences";
+import { Notifications } from "./pages/Settings/Notifications";
+import { Security } from "./pages/Settings/Security";
 
 function App() {
 
@@ -49,12 +49,24 @@ const Layout = () =>{
         element: <Home/>,
       },
       {
-        path: "users",
+        path: "/users",
         element: <Users/>,
       },
       {
-        path: "products",
+        path: "/products",
         element: <Products/>,
+      },
+      {
+        path: "/settings",
+        element: <Preferences/>,
+      },
+      {
+        path: "/settings/security",
+        element: <Security/>,
+      },
+      {
+        path: "/settings/notifications",
+        element: <Notifications/>,
       },
     ],
   },
