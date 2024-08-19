@@ -63,7 +63,7 @@
             },
             {
                 id:4,
-                title:"Posts",
+                title:"Support Screen",
                 icon:postIcon,
                 url:"/posts"
             },
@@ -113,9 +113,9 @@
             },
             {
                 id:2,
-                title:"Backups",
+                title:"Support",
                 icon:backupIcon,
-                url:"/"
+                url:"/SupportScreen"
             },
         ],
     },
@@ -456,3 +456,52 @@ export const myrows=[
         verified: false,
     }
 ]
+
+
+export const addProduct = [
+    {
+      id: 1,
+      img: "https://example.com/images/product1.jpg",
+      title: "Product 1",
+      range: "10-20",
+      producer: "Producer 1",
+      price: 19.99,
+      createdAt: "2023-01-01"
+    },
+    {
+      id: 2,
+      img: "https://example.com/images/product2.jpg",
+      title: "Product 2",
+      range: "20-30",
+      producer: "Producer 2",
+      price: 29.99,
+      createdAt: "2023-02-01"
+    },
+    {
+      id: 3,
+      img: "https://example.com/images/product3.jpg",
+      title: "Product 3",
+      range: "30-40",
+      producer: "Producer 3",
+      price: 39.99,
+      createdAt: "2023-03-01"
+    },
+    {
+      id: 4,
+      img: "https://example.com/images/product4.jpg",
+      title: "Product 4",
+      range: "40-50",
+      producer: "Producer 4",
+      price: 49.99,
+      createdAt: "2023-04-01"
+    },
+    {
+      id: 5,
+      img: "https://example.com/images/product5.jpg",
+      title: "Product 5",
+      range: "50-60",
+      producer: "Producer 5",
+      price: 59.99,
+      createdAt: "2023-05-01"
+    }
+  ];
