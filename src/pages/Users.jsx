@@ -2,6 +2,8 @@ import React from 'react'
 import DataTable from '../components/DataTable'
 import { myrows } from '../data';
 import noAvatar from '../assets/noavatar.png'
+import { useState } from 'react';
+import AddUsers from '../components/AddUsers';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 90 },
@@ -62,15 +64,17 @@ const columns = [
 ];
 
 const Users = () => {
+  const [open, setOpen]=useState(false)
   return (
 <div className="users ">
   <div className="info items-center gap-[20px] mb-[20px] cursor-pointer">
   <div className="info1 flex gap-[10px] ">
     <h1 className="font-bold text-3xl ">Users</h1>
-    <button className="p-2 bg-slate-400 rounded-lg mb-3 hover:bg-slate-500">Add New User</button>
+    <button onClick={()=> setOpen(true)} className="p-2 bg-slate-400 rounded-lg mb-3 hover:bg-slate-500">Add New User</button>
     </div>
     <DataTable columns={columns} myrows={myrows} linkToUsers="users" />
-  </div>
+      {open && <AddUsers columns={columns} setOpen={setOpen} criteria="user" />}
+    </div>
 </div>  )
 }
 
