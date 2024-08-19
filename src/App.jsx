@@ -14,6 +14,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Login from "./pages/Login";
+import { Preferences } from "./pages/Settings/Preferences";
+ import { Notifications } from "./pages/Settings/Notifications";
+ import { Security } from "./pages/Settings/Security";
+import Orders from "./pages/Orders";
+//  import SupportScreen from "./pages/Support/Screens/SupportScreen";
 
 function App() {
 
@@ -49,13 +54,32 @@ const Layout = () =>{
         element: <Home/>,
       },
       {
-        path: "users",
+        path: "/users",
         element: <Users/>,
       },
       {
-        path: "products",
+        path: "/orders",
+        element: <Orders/>,
+      },
+      {
+        path: "/products",
         element: <Products/>,
       },
+      {
+        path: "/settings",
+        element: <Preferences/>,
+      },
+      // {
+      //   path: "/support/*",
+      //   element: <SupportScreen/>,
+      // },
+      {
+        path: "/settings/security",
+        element: <Security/>,
+      },
+      {
+        path: "/settings/notifications",
+        element: <Notifications/>,  },
     ],
   },
       {

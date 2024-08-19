@@ -24,7 +24,7 @@ const columns=[
     {
       field:"range",
       type:"string",
-      headerName:"Range",
+      headerName:"Range ",
       width:250,
     },
     {

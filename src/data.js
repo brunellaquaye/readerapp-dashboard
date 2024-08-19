@@ -1,3 +1,6 @@
+import { GiChoice } from "react-icons/gi"
+import {  MdSecurity } from "react-icons/md"
+import { IoNotificationsOutline } from "react-icons/io5" 
  import homeIcon from "./assets/home.svg"
  import profileIcon from "./assets/profile.svg"
  import userIcon from "./assets/user.svg"
@@ -16,6 +19,8 @@
  import user from "./assets/userIcon.svg"
  import product from "./assets/productIcon.svg"
  import revenue from "./assets/revenueIcon.svg"
+ 
+
 
 // Future upgrades: Use APIs for this or you will have to fetch the data from the database
 
@@ -35,7 +40,7 @@
                 id:2,
                 title:"Profile",
                 icon:profileIcon,
-                url:"/users/1"
+                url:"/users"
             },
         ],
     },
@@ -61,12 +66,12 @@
                 icon:orderIcon,
                 url:"/orders"
             },
-            {
-                id:4,
-                title:"Support Screen",
-                icon:postIcon,
-                url:"/posts"
-            },
+            // {
+            //     id:4,
+            //     title:"Support Screen",
+            //     icon:postIcon,
+            //     url:"/support"
+            // },
         ],
     },
 
@@ -109,34 +114,58 @@
                 id:1,
                 title:"Settings",
                 icon:settingIcon,
-                url:"/"
-            },
-            {
-                id:2,
-                title:"Support",
-                icon:backupIcon,
-                url:"/SupportScreen"
-            },
+                url:"/settings",
+                submenu: true,
+                onClick: true,
+                subItems: [
+                    {
+                        id: 1,
+                        title: "Preference",
+                        url: "/settings",
+                        icon: GiChoice 
+                    },
+                    {
+                        id: 2,
+                        title: "Security",
+                        url: "/settings/security",
+                       icon:  MdSecurity 
+                    },
+                    {
+                        id: 3,
+                        title: "Notification",
+                        url: "/settings/notifications",
+                        icon: IoNotificationsOutline 
+                    },
+                ]
+                    
+           
+              },
+            // {
+            //     id:2,
+            //     title:"Backups",
+            //     icon:backupIcon,
+            //     url:"/"
+            // },
         ],
     },
-    {
-        id:5,
-        title:"analytics",
-        listItems:[
-            {
-                id:1,
-                title:"Charts",
-                icon:chartIcon,
-                url:"/"
-            },
-            {
-                id:2,
-                title:"Logs",
-                icon:logIcon,
-                url:"/"
-            },
-        ],
-    },
+    // {
+    //     id:5,
+    //     title:"analytics",
+    //     listItems:[
+    //         {
+    //             id:1,
+    //             title:"Charts",
+    //             icon:chartIcon,
+    //             url:"/"
+    //         },
+    //         {
+    //             id:2,
+    //             title:"Logs",
+    //             icon:logIcon,
+    //             url:"/"
+    //         },
+    //     ],
+    // },
     
     
  ];
