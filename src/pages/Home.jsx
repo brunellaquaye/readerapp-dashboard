@@ -1,4 +1,3 @@
-import React from 'react'
 import TopBox from '../components/TopBox'
 import ChartBox from "../components/ChartBox"
 import { barChartBoxRevenue, barChartBoxVisit, chartBoxConversion, chartBoxProducts, chartBoxRevenue, chartBoxUser } from '../data'
