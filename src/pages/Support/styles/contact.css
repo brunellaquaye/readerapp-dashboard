@@ -5,7 +5,7 @@
     display: flex;
     flex:1;
     flex-direction: column;
-    margin-left: 2%;
+    margin-left: 100px;
 
 }@media(min-width:500px) and (max-width:640px){
     .contact-support-top-section-container{
@@ -23,7 +23,7 @@
 .contact-intro{
     font-weight: 700 ;
     font-size: 16px ;
-    color:#625656;
+    color: white;
 }
 .contact-middle-container{
     display: flex;
@@ -44,7 +44,7 @@
     min-height: 187px;
     border:0.5px solid #989898;
     border-radius: 20px;
-    padding-left:25px;
+    padding-left:20px;
     padding-bottom: 70px;
 }
 .client-info-box{
@@ -57,19 +57,19 @@
  font-family: "Inter", sans-serif;
  font-weight: 200;
  font-size: 16px;
- color: #989898;
+ color: white;
  line-height: 31px;
 }
 
 .client-socials {
     display: flex;
     flex-direction: row;
-    column-gap: 0.5rem;
+    /* column-gap: 0.5rem; */
     position: relative; 
 }
 
 .client-socials img {
-    width: 50px;
+    width: 40px;
     height: 50px;
     object-fit: contain;
     transition: transform 0.3s ease, z-index 0.3s ease;
@@ -108,7 +108,7 @@
     width: 56px;
     height: 46px;
     border: 1px;
-    background-color: #AAAAAA;
+    background-color: white;
 }
 .not-a-robot-container p{
     font-family:  "Inter", sans-serif;
@@ -118,18 +118,20 @@
 }
 .send-container{
     display: flex;
-    width: 124px;
-    height: 60px;
-    border-radius: 5px;
-    background-color: #989898;
+    width: 120px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: white;
     align-items: center;
+    color: black;
 }
 .send-container button{
     width: 100%;
     height: 100%;
     font-family: "Inter",sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px; ;
 }
 .send-container:hover{
     background-color:#FFAD16

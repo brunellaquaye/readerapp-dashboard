@@ -15,25 +15,33 @@ function Contact() {
   return (
     <div className='contact-wrapper'>
       <div className='contact-support-top-section-container'>
-        <SupportScreensTopSection title="Contact Support!">
-          <p className='contact-intro'>We can't solve your problems if you don't tell us about it!</p>
+        <SupportScreensTopSection title="Contact Support!"
+        className=" bg-black">
+          <p className='contact-intro mt-7'>We can't solve your problems if you don't tell us about it!</p>
         </SupportScreensTopSection>
       </div>
       <div className='contact-middle-container'>
         <section className='user-box'>
-          <CustomInputElement placeholder="Your name" />
+          <CustomInputElement placeholder="Name" />
           <CustomInputElement placeholder="Email" />
           <input type="text-area" placeholder='Message' />
+          <section className='send-container mt-10 '>
+          <button 
+          className='text-center font-extrabold'
+          type="submit">Send</button>
         </section>
+        </section>
+        
         <section className='client-info-box'>
           <div className='client-address'>
             <p>ReaderApp, Inc</p>
-            <p>123 Main Street</p>
-            <p>Anytown, CA 12345</p>
-            <p>United States</p>
+            {/* <p>123 Main Street</p>
+            <p>Anytown, CA 12345</p> */}
+            <p>Accra,Ghana</p>
           </div>
-          <div className='client-socials'>
+          <div className='client-socials  '>
             <img
+            className=" rounded-full"
               src={Facebook}
               alt="facebook"
               onClick={() => handleSocialClick('https://facebook.com')}
@@ -48,24 +56,24 @@ function Contact() {
               alt="twitter"
               onClick={() => handleSocialClick('https://twitter.com')}
             />
-            <img
+            {/* <img
               src={Google}
               alt="google"
               onClick={() => handleSocialClick('https://google.com')}
-            />
+            /> */}
           </div>
         </section>
       </div>
       <div className='contact-bottom-container'>
-        <section className='not-a-robot-container'>
+
+      {/* I am not a robot section */}
+        {/* <section className='not-a-robot-container'>
           <div>
-            {/* Place for CAPTCHA or other verification */}
+            Place for CAPTCHA or other verification
           </div>
           <p>I'm not a robot</p>
-        </section>
-        <section className='send-container'>
-          <button type="submit">Send</button>
-        </section>
+        </section> */}
+        
       </div>
     </div>
   );

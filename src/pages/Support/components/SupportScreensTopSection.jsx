@@ -43,10 +43,10 @@ function SupportScreensTopSection({ title, children }) {
           )}
         </div>
 
-        <div className="support-button-wrapper">
+        {/* <div className="support-button-wrapper">
           <CustomButton buttonName="Cancel" onClick={() => handleButtonClick('Cancel')} />
           <CustomButton buttonName="Save Changes" onClick={() => handleButtonClick('Save Changes')} />
-        </div>
+        </div> */}
       </section>
     </div>
   );

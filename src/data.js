@@ -1,6 +1,8 @@
 import { GiChoice } from "react-icons/gi"
 import {  MdSecurity } from "react-icons/md"
-import { IoNotificationsOutline } from "react-icons/io5" 
+import { IoNotificationsOutline } from "react-icons/io5"
+import { RiQuestionLine } from "react-icons/ri" 
+import { AiOutlinePhone } from "react-icons/ai"
  import homeIcon from "./assets/home.svg"
  import profileIcon from "./assets/profile.svg"
  import userIcon from "./assets/user.svg"
@@ -66,12 +68,6 @@ import { IoNotificationsOutline } from "react-icons/io5"
                 icon:orderIcon,
                 url:"/orders"
             },
-            // {
-            //     id:4,
-            //     title:"Support Screen",
-            //     icon:postIcon,
-            //     url:"/support"
-            // },
         ],
     },
 
@@ -140,32 +136,40 @@ import { IoNotificationsOutline } from "react-icons/io5"
                     
            
               },
-            // {
-            //     id:2,
-            //     title:"Backups",
-            //     icon:backupIcon,
-            //     url:"/"
-            // },
+              {
+                id:2,
+                title:"Support",
+                icon:logIcon,
+                url:"/contact",
+                submenu: true,
+                onClick: true,
+                subItems: [
+                    {
+                        id: 1,
+                        title: "Contact",
+                        url: "/contact",
+                        icon: AiOutlinePhone 
+                    },
+                    {
+                        id: 2,
+                        title: "FAQ",
+                        url: "/faq",
+                       icon:  RiQuestionLine 
+                    },
+                    // {
+                    //     id: 3,
+                    //     title: "Support",
+                    //     url: "/supportscreen",
+                    //     icon: IoNotificationsOutline 
+                    // },
+                ]
+                    
+           
+              },
+           
         ],
     },
-    // {
-    //     id:5,
-    //     title:"analytics",
-    //     listItems:[
-    //         {
-    //             id:1,
-    //             title:"Charts",
-    //             icon:chartIcon,
-    //             url:"/"
-    //         },
-    //         {
-    //             id:2,
-    //             title:"Logs",
-    //             icon:logIcon,
-    //             url:"/"
-    //         },
-    //     ],
-    // },
+   
     
     
  ];

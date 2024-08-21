@@ -47,7 +47,7 @@ const columns=[
     },
     {
       field:"inStock",
-      type:"string",
+      // type:"string",
       headerName:"In Stock",
       width:250,
       type:"boolean"

@@ -18,7 +18,9 @@ import { Preferences } from "./pages/Settings/Preferences";
  import { Notifications } from "./pages/Settings/Notifications";
  import { Security } from "./pages/Settings/Security";
 import Orders from "./pages/Orders";
-//  import SupportScreen from "./pages/Support/Screens/SupportScreen";
+import SupportScreen from "./pages/Support/Screens/SupportScreen";
+import Contact from "./pages/Support/Screens/Contact";
+import FAQ from "./pages/Support/Screens/FAQScreen";
 
 function App() {
 
@@ -69,17 +71,27 @@ const Layout = () =>{
         path: "/settings",
         element: <Preferences/>,
       },
-      // {
-      //   path: "/support/*",
-      //   element: <SupportScreen/>,
-      // },
       {
         path: "/settings/security",
         element: <Security/>,
       },
       {
         path: "/settings/notifications",
-        element: <Notifications/>,  },
+        element: <Notifications/>,  
+      },
+      {
+        path: "/contact",
+        element: <Contact/>,
+      },
+      {
+        path: "/faq",
+        element: <FAQ/>,
+      },
+      // {
+      //   path: "/supportscreen",
+      //   element: <SupportScreen/>,
+      // },
+
     ],
   },
       {

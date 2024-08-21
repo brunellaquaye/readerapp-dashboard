@@ -6,12 +6,16 @@ import SupportScreensTopSection from "../components/SupportScreensTopSection";
 function FAQScreen() {
   return (
     <div className="faq-wrapper">
-      <SupportScreensTopSection title="FAQ">
-        <p>
+    <div className="topsection ml-[5%]">
+    <SupportScreensTopSection title="FAQ"
+     >
+        <p className="text-gray-400">
           Got a question? We’re here to answer! If you don’t see your question
           here, drop us a line on our <a href="#contact">Contact Page.</a>
         </p>
       </SupportScreensTopSection>
+    </div>
+      
       <section className="questions-container">
         <QuestionBox
           question="What is the ReaderApp dashboard?"
