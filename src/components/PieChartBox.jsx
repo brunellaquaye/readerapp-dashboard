@@ -7,7 +7,7 @@ const data =[
     {name:"Mobile",value:870, color:"#FF8042"},
     {name:"Laptop",value:450, color:"#FFBB28"},
     {name:"Tablet",value:400, color:"#0088FE"},
-    {name:"Desktop",value:100, color:"#00C49F"},
+    // {name:"Desktop",value:100, color:"#00C49F"},
 ]
 
 const PieChartBox = () => {

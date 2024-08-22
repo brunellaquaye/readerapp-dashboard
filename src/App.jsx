@@ -29,10 +29,10 @@ const Layout = () =>{
     <div className="main">
       <Navbar/>
       <div className="container w-full h-full">
-        <div className="menuContainer">
+        <div className="menuContainer w-max sm:w-[250px] ">
           <Menu/>
         </div>
-        <div className="contentContainer">
+        <div className="contentContainer flex-grow">
           <Outlet />
         </div>
         

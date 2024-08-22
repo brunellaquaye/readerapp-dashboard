@@ -7,9 +7,9 @@ import { chartBoxUser } from "../data";
 
 const ChartBox = ({ color, icon, title, dataKey, number, percentage, chartData }) => {
   return (
-    <div className="chartbox flex h-full gap-2.5">
-      <div className="boxInfo flex flex-3 flex-col justify-between">
-        <div className="title flex items-center gap-2.5">
+    <div className="chartbox flex h-full gap-2.5 flex-col md:flex-row">
+      <div className="boxInfo flex flex-3 flex-col justify-between sm:gap-5">
+        <div className="title flex items-center gap-2.5 ">
           <img src={icon} alt="User icon" />
           <span>{title}</span>
         </div>
@@ -34,7 +34,7 @@ const ChartBox = ({ color, icon, title, dataKey, number, percentage, chartData }
           </ResponsiveContainer>
         </div>
         <div className="texts flex text-right flex-col mt-2">
-          <span className="percentage font-bold text-orange-300 text-lg">
+          <span className="percentage font-bold text-orange-300 text-lg ">
             {percentage}%
           </span>
           <span className="duration text-sm">this month</span>

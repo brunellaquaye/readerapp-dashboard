@@ -26,7 +26,7 @@ const Menu = () => {
               >
                 <div className="flex items-center gap-[10px]">
                   <img src={listItems.icon} alt="" />
-                  <span className="listItemTitle">{listItems.title}</span>
+                  <span className="listItemTitle hidden sm:block">{listItems.title}</span>
                 </div>
                 {listItems.submenu && (
                   <IoChevronDown
